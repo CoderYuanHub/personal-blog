@@ -21,6 +21,16 @@ module.exports = {
         link: '/',
       },
       {
+        text: 'Vue新篇章',
+        link: '/vue',
+        children: [
+          {
+            text: '自定义组件的v-model',
+            link: '/vue/vmodel.html',
+          }
+        ]
+      },
+      {
         text: '博主正在努力中～',
         link: '/guide/',
       }
