@@ -4,6 +4,7 @@ module.exports = {
   title: '马里奥',
   description: '这是我的第一个 VuePress 站点',
   head: [['link', { rel: 'icon', href: '/images/logo.png' }]],
+  base: '/',
 
   // 主题和它的配置
   theme: '@vuepress/theme-default',
