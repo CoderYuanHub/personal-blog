@@ -3,7 +3,7 @@ module.exports = {
   lang: 'zh-CN',
   title: '马里奥',
   description: '这是我的第一个 VuePress 站点',
-  head: [['link', { rel: 'icon', href: '/images/logo.png' }]],
+  head: [['link', { rel: 'icon', href: '/personal-blog/images/logo.png' }]],
   base: '/personal-blog/',
 
   // 主题和它的配置
