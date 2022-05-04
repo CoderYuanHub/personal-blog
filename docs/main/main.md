@@ -1,0 +1,1 @@
+<y-main></y-main>

@@ -1,4 +1,8 @@
+const { path } = require('@vuepress/utils');
+
 module.exports = {
+  host: 'localhost',
+  port: '8080',
   // 站点配置
   lang: 'zh-CN',
   title: '马里奥',
@@ -7,7 +11,8 @@ module.exports = {
   base: '/personal-blog/',
 
   // 主题和它的配置
-  theme: '@vuepress/theme-default',
+  // theme: '@vuepress/theme-default',
+  theme: path.resolve(__dirname, './theme'),
   themeConfig: {
     logo: '/images/logo.png',
     // repo: 'vuejs/vuepress',
@@ -23,14 +28,14 @@ module.exports = {
       },
       {
         text: 'Vue新篇章',
-        link: '/vue',
-        children: [
-          {
-            text: '自定义组件的v-model',
-            link: '/vue/vmodel.html',
-          }
-        ]
+        collapsible: true,
+        
+        children: ['/vue/vmodel.md']
       },
+      // {
+      //   text: "自定义组件界面",
+      //   link: "/main/main.html",
+      // },
       {
         text: '博主正在努力中～',
         link: '/guide/',
@@ -45,4 +50,12 @@ module.exports = {
     ],
     backToHome: "我要回首页了～",
   },
+  plugins: [
+    [
+      '@vuepress/plugin-register-components',
+      {
+        componentsDir: path.resolve(__dirname, './components')
+      }
+    ]
+  ]
 }
