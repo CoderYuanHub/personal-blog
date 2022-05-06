@@ -29,8 +29,12 @@ module.exports = {
       {
         text: 'Vue新篇章',
         collapsible: true,
-        
         children: ['/vue/vmodel.md']
+      },
+      {
+        text: '工具方法',
+        collapsible: true,
+        children: ['/tools/export-to-world.md']
       },
       // {
       //   text: "自定义组件界面",
