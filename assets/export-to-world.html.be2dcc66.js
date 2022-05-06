@@ -1,0 +1,1 @@
+const t={key:"v-6242ea2d",path:"/tools/export-to-world.html",title:"\u524D\u7AEFhtml\u5BFC\u51FAworld",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[{level:2,title:"\u4F7F\u7528\u65B9\u6CD5",slug:"\u4F7F\u7528\u65B9\u6CD5",children:[]}]};export{t as data};
