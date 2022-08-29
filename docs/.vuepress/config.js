@@ -1,5 +1,4 @@
 const { path } = require('@vuepress/utils');
-
 module.exports = {
   host: 'localhost',
   port: '8080',
@@ -34,7 +33,7 @@ module.exports = {
       {
         text: '工具方法',
         collapsible: true,
-        children: ['/tools/export-to-world.md']
+        children: ['/tools/export-to-world.md','/tools/the-patch.md']
       },
       // {
       //   text: "自定义组件界面",
