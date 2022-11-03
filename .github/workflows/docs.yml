@@ -1,9 +1,9 @@
 name: docs
 
 on:
-  # 每当 push 到 master 分支时触发部署
+  # 每当 push 到 main 分支时触发部署
   push:
-    branches: [master]
+    branches: [main]
   # 手动触发部署
   workflow_dispatch:
 
@@ -21,7 +21,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           # 选择要使用的 node 版本
-          node-version: '14'
+          node-version: "14"
 
       # 缓存 node_modules
       - name: Cache dependencies
@@ -54,4 +54,4 @@ jobs:
           build_dir: docs/.vuepress/dist
         env:
           # @see https://docs.github.com/cn/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
