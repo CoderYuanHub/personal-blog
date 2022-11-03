@@ -2,10 +2,6 @@ import { defineUserConfig } from "vuepress";
 import { defaultTheme } from "@vuepress/theme-default";
 
 export default defineUserConfig({
-  lang: "zh-CN",
-  title: "你好， VuePress ！",
-  description: "这是我的第一个 VuePress 站点",
-  // name: "vuepress-theme-foo-test",
   host: "localhost",
   port: "8080",
   // 站点配置
